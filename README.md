@@ -10,6 +10,10 @@ End-to-end analysis of a Brazilian e-commerce marketplace: from raw operational 
 
 
 
+!\[Olist Dashboard - Executive Summary](assets/dashboard\_preview.png)
+
+
+
 **TLDR - Findings:**
 
 
