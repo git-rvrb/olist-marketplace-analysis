@@ -144,7 +144,7 @@ Both customers and sellers have a zip code prefix, both referencing the same pos
 
 I chose the latter for simplicity — a conformed dimension shared between the two. The customer and seller-side relationships to geography are both set up in the model, with one active and one inactive (Power BI allows only one active relationship between two tables).
 
-T
+
 
 **4. Filtering pre-2017 cohorts from the retention heatmap**
 
