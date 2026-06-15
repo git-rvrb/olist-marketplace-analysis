@@ -1,8 +1,4 @@
-README
-
-
-
-Olist Marketplace Analysis - Brazilian E-commerce
+\#Olist Marketplace Analysis - Brazilian E-commerce
 
 
 
@@ -14,7 +10,7 @@ End-to-end analysis of a Brazilian e-commerce marketplace: from raw operational 
 
 
 
-**TLDR - Findings:**
+**##TLDR - Findings:**
 
 
 
@@ -32,7 +28,7 @@ End-to-end analysis of a Brazilian e-commerce marketplace: from raw operational 
 
 
 
-**The business question:**
+**##The business question:**
 
 
 
@@ -48,7 +44,7 @@ Answering this required analysing Olist's customer base, seller distribution, ge
 
 
 
-**The Data:**
+**##The Data:**
 
 
 
@@ -80,7 +76,7 @@ Full quality findings and decisions are documented in data\_quality\_notes.md.
 
 
 
-**Approach:**
+**##Approach:**
 
 
 
@@ -118,7 +114,7 @@ Phase 7 — Polish and write-up: Final design pass, this README + supporting doc
 
 
 
-**Key analytical decisions:**
+**##Key analytical decisions:**
 
 
 
@@ -168,7 +164,7 @@ Doing the heavy lifting in DAX would have created complex, hard-to-debug measure
 
 
 
-**Tools used:**
+**##Tools used:**
 
 
 
