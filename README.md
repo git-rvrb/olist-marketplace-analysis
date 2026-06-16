@@ -2,7 +2,29 @@
 
 End-to-end analysis of a Brazilian e-commerce marketplace: from raw operational data to dimensional model to executive dashboard
 
-![Olist Dashboard - Executive Summary](assets/dashboard_preview.png)
+
+## Dashboard Preview
+
+### Page 1 — Executive Summary
+Topline KPIs, revenue trend, geographic distribution. The marketplace overview.
+
+![Executive Summary](assets/01_executive_summary.png)
+
+### Page 2 — Customer Analytics
+Cohort retention heatmap and RFM segmentation. Acquisition-driven story.
+
+![Customer Analytics](assets/02_customer_analytics.png)
+
+### Page 3 — Marketplace Health
+Seller distribution curve, category mix, geographic concentration.
+
+![Marketplace Health](assets/03_marketplace_health.png)
+
+### Page 4 — Delivery & Satisfaction
+The delivery → review correlation story.
+
+![Delivery & Satisfaction](assets/04_delivery_satisfaction.png)
+
 
 ## TLDR - Findings
 
