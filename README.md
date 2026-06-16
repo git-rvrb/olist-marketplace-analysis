@@ -96,6 +96,7 @@ Doing the heavy lifting in DAX would have created complex, hard-to-debug measure
 
 ## Repo Structure
 
+```
 olist-marketplace-analysis/
 ├── README.md
 ├── data_quality_notes.md
@@ -118,3 +119,4 @@ olist-marketplace-analysis/
 │   └── olist_dashboard.pbix
 └── assets/
 └── dashboard_preview.png
+```
