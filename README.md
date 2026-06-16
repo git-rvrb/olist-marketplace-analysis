@@ -118,7 +118,7 @@ Phase 7 — Polish and write-up: Final design pass, this README + supporting doc
 
 
 
-**1. Customer grain**
+**### 1. Customer grain**
 
 The customers table has two ID columns that initially look like keys. Profiling revealed that the table is keyed on customer\_id — but customer\_id is regenerated per order, meaning a person who ordered three times has three different customer\_id values. The actual person identifier is customer\_unique\_id, which is stable across orders.
 
@@ -130,7 +130,7 @@ Treating customer\_id as the customer identifier would have produced silently wr
 
 
 
-**2. RFM segmentation**
+**### 2. RFM segmentation**
 
 The textbook RFM framework assumes a balanced frequency distribution. Olist's frequency distribution is degenerate — 97% of customers have just one order.
 
@@ -138,7 +138,7 @@ I redesigned the segmentation around the R × M plane (recency × monetary), wit
 
 
 
-**3. Geography as a conformed dimension**
+**### 3. Geography as a conformed dimension**
 
 Both customers and sellers have a zip code prefix, both referencing the same postal geography. This left two options when modelling: embed geographic attributes (city, state, lat/lng) directly into both dim\_customer and dim\_seller, or build a separate dim\_geography that both reference.
 
@@ -146,7 +146,7 @@ I chose the latter for simplicity — a conformed dimension shared between the t
 
 
 
-**4. Filtering pre-2017 cohorts from the retention heatmap**
+**### 4. Filtering pre-2017 cohorts from the retention heatmap**
 
 The dataset spans September 2016 through October 2018, but inspecting the early months revealed that 2016 contained only a handful of customers — September 2016 had a single customer, October 2016 had 262 spread across sparse months, December 2016 had one. These look like test data rather than real activity. The first month resembling normal marketplace activity is January 2017 (717 customers).
 
@@ -154,7 +154,7 @@ I filtered the cohort heatmap to start from January 2017 onward. Including the p
 
 
 
-**5. Pushing transformations upstream into SQL rather than Power Query or DAX**
+**### 5. Pushing transformations upstream into SQL rather than Power Query or DAX**
 
 I did the dimensional modelling, cohort analysis, RFM segmentation, and the delivery-vs-review queries in SQL views. Power Query is used only for more trivial Power-BI-specific corrections (column data types, sort-by-column setup). DAX is used for filter-context-aware measures, time intelligence, ratios that respond dynamically to user filters.
 
